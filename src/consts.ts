@@ -31,12 +31,12 @@ interface Site {
 
 // Site configuration
 export const SITE: Site = {
-  website: "https://steipete.me/",
-  author: "Peter Steinberger",
-  profile: "https://steipete.me/about",
-  desc: "AI-powered tools from Swift roots to web frontiers. Every commit lands on GitHub for you to fork & remix.",
-  title: "Peter Steinberger",
-  ogImage: "peter-avatar.jpg",
+  website: "https://robertmillerconsultancy.com",
+  author: "Robert Miller",
+  profile: "https://robertmillerconsultancy.com/about",
+  desc: "Essays and notes on technology, markets, and building meaningful systems.",
+  title: "Robert Miller",
+  ogImage: "robert-avatar.jpg",
   lightAndDarkMode: true,
   postPerIndex: 10,
   postPerPage: 10,
@@ -44,13 +44,13 @@ export const SITE: Site = {
   showArchives: false,
   showBackButton: false,
   editPost: {
-    enabled: true,
+    enabled: false,
     text: "Edit on GitHub",
-    url: "https://github.com/steipete/steipete.me/edit/main/",
+    url: "",
   },
   dynamicOgImage: true,
   lang: "en",
-  timezone: "America/Los_Angeles",
+  timezone: "Europe/Paris",
 };
 
 export const SITE_TITLE = SITE.title;
@@ -71,16 +71,24 @@ export const NAV_LINKS: SocialLink[] = [
 // Social media links
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    href: "https://github.com/steipete",
+    href: "https://x.com/rob_miller87",
+    label: "Twitter", // icon maps to twitter
+  },
+  {
+    href: "https://www.linkedin.com/in/rm16/",
+    label: "LinkedIn",
+  },
+  {
+    href: "https://github.com/robmiller87",
     label: "GitHub",
   },
   {
-    href: "https://twitter.com/steipete",
-    label: "Twitter",
+    href: "https://www.instagram.com/je_suis_robert_miller/",
+    label: "Instagram",
   },
   {
-    href: "https://bsky.app/profile/steipete.me",
-    label: "BlueSky",
+    href: "https://t.me/robmiller",
+    label: "Telegram",
   },
   {
     href: "/rss.xml",
@@ -92,7 +100,10 @@ export const SOCIAL_LINKS: SocialLink[] = [
 export const ICON_MAP: Record<string, string> = {
   GitHub: "github",
   Twitter: "twitter",
-  BlueSky: "bsky",
+  LinkedIn: "linkedin",
+  Instagram: "instagram",
+  Telegram: "telegram",
   RSS: "rss",
   Email: "mail",
 };
+
