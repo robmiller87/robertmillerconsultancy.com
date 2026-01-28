@@ -59,7 +59,7 @@
       "has": [
         {
           "type": "host",
-          "value": "^(?!(steipete\\.me|www\\.steipete\\.me|steipete\\.md|www\\.steipete\\.md|.*\\.vercel\\.app|.*\\.friendship\\.dev|.*\\.amantus\\.dev|.*\\.sweetistics\\.com)).*$"
+          "value": "^(?!(steipete\\.me|www\\.steipete\\.me|steipete\\.md|www\\.steipete\\.md|.*\\.vercel\\.app|.*\\.friendship\\.dev|.*\\.amantus\\.dev|.*\\.sweetistics\\.com|robertmiller\\.xyz|www\\.robertmiller\\.xyz)).*$"
         }
       ],
       "destination": "https://steipete.me/:path*",
