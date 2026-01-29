@@ -1,6 +1,7 @@
 ---
 import Hr from "./Hr.astro";
 import Socials from "./Socials.astro";
+import NewsletterForm from "./NewsletterForm.astro";
 
 export interface Props {
   noMarginTop?: boolean;
@@ -10,6 +11,10 @@ const { noMarginTop = false } = Astro.props;
 ---
 
 <footer class:list={["w-full", { "mt-auto": !noMarginTop }]}>
+  <div class="my-8">
+    <h3 class="text-lg font-semibold mb-2 text-center">Stay in the loop</h3>
+    <NewsletterForm variant="compact" />
+  </div>
   <Hr noPadding />
   <div
     class="flex flex-col items-center justify-between py-6 sm:flex-row-reverse sm:py-4"
