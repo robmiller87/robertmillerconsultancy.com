@@ -208,7 +208,7 @@ export default async (post) => {
                             type: "span",
                             props: {
                               style: { overflow: "hidden", fontWeight: "bold" },
-                              children: "robertmillerconsultancy.com",
+                              children: "robertmiller.xyz",
                             },
                           },
                         ],
@@ -227,7 +227,7 @@ export default async (post) => {
       height: 630,
       embedFont: true,
       fonts: await loadGoogleFonts(
-        post.data.title + post.data.author + "robertmillerconsultancy.com" + "by"
+        post.data.title + post.data.author + "robertmiller.xyz" + "by"
       ),
     }
   );

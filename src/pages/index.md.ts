@@ -19,7 +19,7 @@ Notes on technology, markets, and human systems — plus the occasional field re
 
 ---
 
-*This is the markdown-only version of robertmillerconsultancy.com. Visit [robertmillerconsultancy.com](https://robertmillerconsultancy.com) for the full experience.*`;
+*This is the markdown-only version of robertmiller.xyz. Visit [robertmiller.xyz](https://robertmiller.xyz) for the full experience.*`;
 
   return new Response(markdownContent, {
     status: 200,
