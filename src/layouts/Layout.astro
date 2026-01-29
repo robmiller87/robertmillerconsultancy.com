@@ -47,6 +47,43 @@ const structuredData = {
     },
   ],
 };
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Robert Miller",
+  "url": "https://robertmiller.xyz",
+  "sameAs": [
+    "https://www.linkedin.com/in/rm16/",
+    "https://twitter.com/rob_miller87",
+    "https://www.instagram.com/je_suis_robert_miller/"
+  ],
+  "jobTitle": "Founder & Advisor",
+  "knowsAbout": ["Web3", "Growth Strategy", "Crypto Payments", "DeFi", "Founder Coaching", "Startups"],
+  "alumniOf": [
+    {"@type": "Organization", "name": "Trustpilot"},
+    {"@type": "Organization", "name": "Fuse Network"},
+    {"@type": "Organization", "name": "Kronos (UKG)"},
+    {"@type": "Organization", "name": "Jabmo"}
+  ],
+  "subjectOf": [
+    {"@type": "NewsArticle", "name": "The Future of Digital Payments Lies in Web3 Payment Services", "url": "https://news.bitcoin.com/the-future-of-digital-payments-lies-in-web3-payment-services-says-robert-miller-of-fuse/", "publisher": {"@type": "Organization", "name": "Bitcoin.com News"}},
+    {"@type": "Article", "name": "Interview with Robert Miller, Marcom Director at Fuse", "url": "https://www.stakingrewards.com/journal/interview-with-robert-miller-marcom-director-at-fuse/", "publisher": {"@type": "Organization", "name": "Staking Rewards"}},
+    {"@type": "NewsArticle", "name": "Fuse Network Announces Formation of Independent FuseDAO", "url": "https://www.prnewswire.com/news-releases/payments-and-defi-centric-blockchain-fuse-network-announces-formation-of-independent-fusedao-ecosystem-development-body-301449176.html", "publisher": {"@type": "Organization", "name": "PR Newswire"}},
+    {"@type": "NewsArticle", "name": "Banking Meets Blockchain", "url": "https://cointelegraph.com/news/banking-meets-blockchain", "publisher": {"@type": "Organization", "name": "Cointelegraph"}},
+    {"@type": "NewsArticle", "name": "Challenger Bank Monaize Partners Komodo Platform", "url": "https://coinspeaker.com/challenger-bank-monaize-partners-komodo-platform-conduct-first-ever-decentralized-ico-dico/", "publisher": {"@type": "Organization", "name": "Coinspeaker"}},
+    {"@type": "NewsArticle", "name": "Monaize Partners Komodo Launching Blockchain e-Banking Platform", "url": "https://www.financemagnates.com/cryptocurrency/news/monaize-partners-komodo-launching-blockchain-e-banking-platform/", "publisher": {"@type": "Organization", "name": "Finance Magnates"}},
+    {"@type": "VideoObject", "name": "Fuse x Pocket Network AMA with the Founders", "url": "https://www.youtube.com/watch?v=mTrWJzk_Hvk"},
+    {"@type": "VideoObject", "name": "Fuse x Kolektivo AMA", "url": "https://www.youtube.com/watch?v=2nRo7WhbCYY"},
+    {"@type": "VideoObject", "name": "Fuse Network Presentation", "url": "https://www.youtube.com/watch?v=Ko5KrN1O0m0"},
+    {"@type": "VideoObject", "name": "Fuse Network Overview", "url": "https://www.youtube.com/watch?v=1aZO-B3pfg4"},
+    {"@type": "VideoObject", "name": "Fuse Network AMA", "url": "https://www.youtube.com/watch?v=GmRUQvFis8k"},
+    {"@type": "VideoObject", "name": "Fuse Network Discussion", "url": "https://www.youtube.com/watch?v=dxTkLo64sy0"},
+    {"@type": "VideoObject", "name": "Fuse Network Interview", "url": "https://www.youtube.com/watch?v=gmmRBj8w9qc"},
+    {"@type": "VideoObject", "name": "Fuse Network Talk", "url": "https://www.youtube.com/watch?v=nC8UdIddyvE"},
+    {"@type": "VideoObject", "name": "Fuse Network Presentation", "url": "https://www.youtube.com/watch?v=ufycLXv87aQ"}
+  ]
+};
 ---
 
 <!doctype html>
@@ -102,6 +139,13 @@ const structuredData = {
       type="application/ld+json"
       is:inline
       set:html={JSON.stringify(structuredData)}
+    />
+
+    <!-- Person Schema for SEO -->
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify(personSchema)}
     />
 
     <!-- Enable RSS feed auto-discovery  -->
