@@ -90,7 +90,7 @@ Most will use AI the way they use every other platform; episodically, transactio
 
 Mastery looks different.
 
-The approach I've been exploring with [George](/blog/2026-01-i-built-an-ai-partner) treats AI not as a service to query, but as a long-running thinking partner. One that accumulates context, challenges assumptions, and sharpens judgment over time. To master AI is not to delegate judgment to it, but to train alongside it. To develop a system that reflects your context, remembers your questions, and evolves with your goals.
+The approach I've been exploring with [George](/posts/2026-01-i-built-an-ai-partner) treats AI not as a service to query, but as a long-running thinking partner. One that accumulates context, challenges assumptions, and sharpens judgment over time. To master AI is not to delegate judgment to it, but to train alongside it. To develop a system that reflects your context, remembers your questions, and evolves with your goals.
 
 This is why ownership matters. When an AI lives entirely inside someone else's ecosystem, you don't build understanding, you rent it. Your context feeds their infrastructure. Your thinking sharpens their model. The relationship ends where their incentives do.
 
