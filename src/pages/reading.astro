@@ -33,6 +33,7 @@ const description = "Things I've read and things I want to read.";
   interface ReadingItem {
     title: string;
     url: string;
+    author?: string;
     date?: string;
     dateAdded?: string;
   }
@@ -74,9 +75,12 @@ const description = "Things I've read and things I want to read.";
           
           return `
             <li class="flex justify-between items-baseline gap-4 py-2">
-              <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="text-skin-accent hover:underline flex-grow">
-                ${item.title}
-              </a>
+              <div class="flex-grow">
+                <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="text-skin-accent hover:underline">
+                  ${item.title}
+                </a>
+                ${item.author ? `<span class="text-sm text-skin-base opacity-70 ml-2">by ${item.author}</span>` : ''}
+              </div>
               ${dateDisplay ? `<span class="text-sm text-skin-base opacity-70 whitespace-nowrap">${dateDisplay}</span>` : ''}
             </li>
           `;
