@@ -68,6 +68,22 @@ Recent posts:
 
 Deployed on Vercel. Push to `main` triggers automatic build and deploy.
 
+### Domain Redirect (robertmillerconsultancy.com)
+
+The legacy domain `robertmillerconsultancy.com` redirects to `robertmiller.xyz` using [redirect.pizza](https://redirect.pizza) (free redirect service).
+
+**Why redirect.pizza?** The domain is registered at Wix who won't transfer it. This bypasses their DNS by pointing directly to redirect.pizza's servers.
+
+**DNS Records (set in Wix):**
+| Type | Name | Value |
+|------|------|-------|
+| A | @ | `89.106.200.1` |
+| CNAME | www | `edge.redirect.pizza` |
+
+**Redirect:** 301 permanent to `https://robertmiller.xyz`
+
+To modify the redirect, log into redirect.pizza.
+
 ---
 
 ## License
