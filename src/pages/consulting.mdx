@@ -6,6 +6,27 @@ description: "Get hands-on help building with AI agents. From first steps to ful
 
 import LinkButton from "@/components/LinkButton.astro";
 
+<div class="flex justify-center mb-12">
+  <div class="relative w-full max-w-md">
+    <video 
+      id="george-video"
+      src="/george-consulting.mp4" 
+      autoplay
+      loop
+      muted
+      playsinline
+      class="w-full rounded-2xl shadow-2xl"
+    />
+    <button
+      id="mute-toggle"
+      onclick="const v=document.getElementById('george-video');v.muted=!v.muted;this.innerHTML=v.muted?'🔇 Click for sound':'🔊 Playing';"
+      class="absolute bottom-3 right-3 px-3 py-1.5 rounded-full bg-black/70 text-white text-sm hover:bg-black/90 transition-colors cursor-pointer"
+    >
+      🔇 Click for sound
+    </button>
+  </div>
+</div>
+
 ## Cut Through the Noise. Ship Something Real.
 
 Everyone's talking about AI agents. Most people are stuck at the demo stage.
